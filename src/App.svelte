@@ -1,19 +1,19 @@
 <script lang="ts">
-  import Quiz from "./components/Quiz.svelte";
-import Start from "./components/Start.svelte"
-
-  let isPlaying = false
+  import Quiz from "./components/Quiz.svelte"
 </script>
 
 <main>
-  <div class="text-center">
+  <div class="text-center my-2">
     <div class="text-2xl">JosiMaster</div>
     <p>マルコフ連鎖のソース: ChatGPT</p>
   </div>
-  {#if !isPlaying}
-    <Start start={() => {
-      isPlaying = true
-    }}/>
-  {/if}
-  <Quiz />
+  <div class="mx-2">
+    <Quiz />
+  </div>
+  <div class="text-center">
+    <button on:click={() => {
+
+    }}>
+    </button>
+  </div>
 </main>
