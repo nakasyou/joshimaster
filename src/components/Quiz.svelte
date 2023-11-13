@@ -29,11 +29,12 @@
     const nextEntry = nextEntries[Math.floor(Math.random() * nextEntries.length)]
     words.push({
       word: nextEntry,
-      joshi: wordDatas[entry].joshi || ''
+      joshi: wordDatas[nextEntry].joshi || ''
     })
   }
 </script>
 <div>
-  {#for}
-  { words.join('') }
+  {#each words as word}
+    
+  {/each}
 </div>
