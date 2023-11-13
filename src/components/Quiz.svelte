@@ -34,6 +34,11 @@
   }
   re()
 </script>
+<div class="text-center">
+  <button on:click={re} class="bg-red-100 rounded p-1 m-2">
+    Reset!
+  </button>
+</div>
 <div class="leading-loose text-lg">
   {#each words as word}
     {#if [''].includes(word.joshi)}
@@ -44,9 +49,4 @@
       }}>{word.word}</button>
     {/if}
   {/each}
-</div>
-<div class="text-center">
-<button on:click={re} class="bg-red-100 rounded p-1 m-2">
-Reset!
-</button>
 </div>
