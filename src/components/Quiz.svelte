@@ -34,8 +34,7 @@
   }
   re()
 </script>
-<div class="leading-loose">
-
+<div class="leading-loose text-lg">
   {#each words as word}
     {#if [''].includes(word.joshi)}
       {word.word}
